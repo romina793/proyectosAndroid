@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.AboutUsFragment"
+    android:id="@+id/fragment_AboutUs"
+    app:cardElevation="20dp"
+    app:cardBackgroundColor="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/aboutUs_imageView"
+            android:src="@drawable/tiendadelchavo"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:id="@+id/aboutUs_textViewDescripcion"
+            android:textColor="#65676b"
+            android:fontFamily="cursive"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="El Chavo vende agua fresca de tamarindo que sabe a jamaica y parece de limón."/>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

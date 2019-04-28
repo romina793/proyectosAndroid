@@ -1,0 +1,111 @@
+CREATE TABLE Clientes (
+dni TEXT PRIMARY KEY,
+nombre TEXT  NOT NULL,
+apellido TEXT
+
+);
+
+CREATE TABLE Productos (
+sku TEXT PRIMARY KEY,
+nombre TEXT NOT NULL
+);
+
+CREATE TABLE Compras (
+dni_clientes TXT,
+sku_productos TEXT,
+fecha DATE,
+PRIMARY KEY (dni, sku, fecha),
+FOREIGN KEY (dni_clientes) REFERENCES Clientes (dni),
+FOREIGN KEY (sku_productos) REFERENCES Productos (sku)
+);
+
+INSERT INTO Clientes (dni, nombre, apellido) VALUES 
+					('32036412', 'Romi', 'Pozzuto');
+
+                    INSERT INTO Clientes (dni, nombre, apellido) VALUES 
+					('32036413', 'Nahue', 'Pozzuto');
+INSERT INTO Clientes (dni, nombre) VALUES 
+					('32036416', 'Jose');
+
+
+                    INSERT INTO Productos (sku, nombre) VALUES 
+					('8976', 'Romina');
+INSERT INTO Productos (sku, nombre) VALUES 
+					('456578', 'Nahuel');
+
+                    INSERT INTO Compras (dni, sku, fecha) VALUES 
+					('32036413', '8976', '4/12/2018');
+
+                    SELECT * FROM Clientes;
+
+                    SELECT * FROM clientes
+                  WHERE nombre = 'Romi';
+
+                  SELECT * FROM clientes
+                ORDER BY dni desc
+
+
+                SELECT * FROM clientes
+
+DELETE FROM clientes
+WHERE dni = '32036416';
+
+SELECT COUNT (*) FROM Compras;
+
+SELECT MIN (dni) as 'lolo' FROM Compras;
+
+SELECT CONCACT (nombre, apellido) as 'nombre y apellido' FROM Compras;
+
+SELECT  nombre || apellido as 'nombre y apellido' FROM clientes;
+
+SELECT  nombre || ' ' ||apellido as 'nombre y apellido' FROM clientes;
+
+select * from clientes
+where nombre like '%L%';
+
+select * from clientes
+where nombre like 'R%';
+
+ALTER TABLE clientes ADD column edad INTEGER;
+
+ALTER TABLE clientes ADD column edad INTEGER;
+
+update clientes set edad = '33' where dni = '32306412';
+
+select * FROM Compras
+join Productos ON Productos.sku = Compras.sku
+join clientes ON Clientes.dni = Compras.dni
+;
+
+PARTE 1
+
+EJERCICIO CONSULTA 1 
+SELECT COUNT (*) FROM Artistas;
+
+EJERCICIO CONSULTA 2
+SELECT COUNT (*) FROM Facturas
+where CodigoPostalDeFacturacion = '00530';
+
+SELECT COUNT (*) FROM Facturas
+WHERE CodigoPostalDeFacturacion like '%00530%';
+
+EJERCICOIO CONSULTA 3
+SELECT COUNT (*) FROM Facturas
+where CiudadDeFacturacion like '%Berlin%';
+
+EJERCICIO CONSULTA 4
+SELECT MAX (total) FROM Facturas
+WHERE PaisDeFacturacion like '%Germany%';
+
+EJERCICIO CONSULTA 5
+SELECT MIN (FechaDeContratacion) FROM Empleados;
+
+EJERCICIO CONSULTA 6
+SELECT SUM(total) FROM facturas
+where FechaFactura like '%2010%'
+;
+
+PARTE 2
+
+EJERCICIO CONSULTA 1
+SELECT (nombre) FROM Artistas;

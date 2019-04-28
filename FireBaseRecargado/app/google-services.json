@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "53848848445",
+    "firebase_url": "https://fir-recargado.firebaseio.com",
+    "project_id": "fir-recargado",
+    "storage_bucket": "fir-recargado.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53848848445:android:40faee8ab4193531",
+        "android_client_info": {
+          "package_name": "proyecto.romina.com.firebaserecargado"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53848848445-l8puq1gbo3hjfvgpiursfbgvv3nhvfig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "proyecto.romina.com.firebaserecargado",
+            "certificate_hash": "6e205ec8bab6170cc3aacc71b5842a8156fc810e"
+          }
+        },
+        {
+          "client_id": "53848848445-ul0jajvscrnnojifk1vp5k9812aidl8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFMfhbDqL4pSbXj3_KrUXUHskDxeO2wVY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53848848445-ul0jajvscrnnojifk1vp5k9812aidl8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
